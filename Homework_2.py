@@ -6,20 +6,18 @@ i = 1
 while i < 6:
     print(i, "00000000000000000")
     i = i + 1
-    if i == 6:
-    break
+
 '''
 # Задание 2. Пользователь в цикле вводит 10 цифр. Найти количество введеных пользователем цифр 5.
 '''
-Greeting = int(input('Введите 10 цифр и я отвечу сколько из них цифра "5":'))
-i= 0
-while Greeting>0:
-    last=Greeting%10
-    if last==5:
-        i= i+1
-
-    Greeting=Greeting//10
-print('Ответ:', i)
+sum=0
+i=0
+while i < 10:
+    Greeting = int(input('Введите 10 цифр и я отвечу сколько из них цифра "5":'))
+    if Greeting == 5:
+        sum = sum + 1
+    i= i+1
+print('Ответ:', sum)
 
 '''
 
@@ -57,15 +55,15 @@ while integer_number>0:
 
 #Задача 6 Найти сумму цифр числа.
 '''
-Greeting=int(input('Введите ряд цифр сумму которых нужно найти:'))
-sum = 1
+Greeting = int(input('Введите ряд цифр сумму которых нужно найти:'))
+sum = 0
 while Greeting>0:
     last=Greeting%10
     sum=sum+last
     Greeting=Greeting//10
 print(sum)
-
 '''
+
 #Задача 7 Найти произведение цифр числа.
 '''
 Greeting=int(input('Введите ряд цифр произведение которых нужно найти:'))

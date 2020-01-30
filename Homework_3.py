@@ -24,16 +24,16 @@ temp_str.split()
 print(temp_str.split())
 #Доп. задание
 def lemmatize(temp_str):
-    words = temp_str.split()
+    x = temp_str.split()
     res = list()
-    for i in words:
+    for i in x:
         p = morph.parse(i)[0]
         res.append(p.normal_form)
 
     return res
 
 print(lemmatize(temp_str))
-"""
+
 
 #задание 3
 list(map(lambda a: a.lower(), temp_str))
@@ -55,7 +55,7 @@ print(len(set(list_dict_)))
 
 # 5) выполнить light с условием: в пункте 2 дополнительно к приведению к нижнему регистру выполнить лемматизацию.
 light 
-"""
+
 
 
 
